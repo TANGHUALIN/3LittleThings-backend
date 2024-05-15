@@ -1,0 +1,26 @@
+{
+  "signup_email": {
+    "subject": {
+      "en": "[3LittleThings] Confirm Your Registration",
+      "ja": "[3LittleThings] 登録を確認してください",
+      "zh": "[3LittleThings] 确认您的注册"
+    },
+    "body": {
+      "en": "Dear User,\n\n Thank you for registering with 3LittleThings. \n\nPlease click on the following link to confirm your registration:\n [Link] \n\nBest regards, \n3LittleThings",
+      "ja": "ユーザー様へ、\n\n3LittleThingsにご登録いただき、ありがとうございます!\n\n以下のリンクをクリックして登録を確認してください：\n[Link] \n\nご不明点がございましたら、お気軽にお問い合わせください。\n3LittleThingsより",
+      "zh": "亲爱的用户，\n\n感谢您注册3LittleThings。\n\n请点击以下链接确认您的注册：\n[Link] \n\n祝好，\n3LittleThings"
+    }
+  },
+  "reset_password_email": {
+    "subject": {
+      "en": "[3LittleThings] Reset Your Password",
+      "ja": "[3LittleThings] パスワードをリセット",
+      "zh": "[3LittleThings] 重置您的密码"
+    },
+    "body": {
+      "en": "Dear User, \n\nPlease click on the following link to reset your password: \n[Link] \n\nBest regards, \n3LittleThings",
+      "ja": "ユーザー様、\n\nパスワードをリセットするには以下のリンクをクリックしてください：\n[Link] \n\nご不明点がございましたら、お気軽にお問い合わせください。\n3LittleThingsより",
+      "zh": "亲爱的用户，\n\n请点击以下链接重置您的密码：\n[Link]\n\n 祝好，\n3LittleThings"
+    }
+  }
+}
