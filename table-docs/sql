@@ -41,7 +41,7 @@ create table diary_entry
 (
     eid        int auto_increment
         primary key,
-    did        int                      null,
+    did        int                      not null,
     content    varchar(255)             not null,
     entry_date date default (curdate()) not null,
     constraint diary_entry_ibfk_1
