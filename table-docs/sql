@@ -1,1 +1,65 @@
+create table user
+(
+    uid             int auto_increment
+        primary key,
+    email           varchar(255) not null,
+    hashed_password varchar(500) not null,
+    constraint user_email_uk
+        unique (email)
+);
+create table diary
+(
+    did            int auto_increment
+        primary key,
+    uid            int                            not null,
+    diary_date     date       default (curdate()) not null,
+    favorite_state tinyint(1) default (false)     not null,
+    constraint diary_ibfk_1
+        foreign key (uid) references user (uid)
+            on delete cascade
+);
+
+create index uid
+    on diary (uid);
+
+
+
+create table temp_user
+(
+    temp_token      varchar(600)                        not null,
+    create_time     timestamp default CURRENT_TIMESTAMP not null,
+    email           varchar(50)                         not null,
+    hashed_password varchar(600)                        not null,
+    constraint temp_user_pk
+        unique (temp_token, email)
+);
+
+
+
+
+create table diary_entry
+(
+    eid        int auto_increment
+        primary key,
+    did        int                      null,
+    content    varchar(255)             not null,
+    entry_date date default (curdate()) not null,
+    constraint diary_entry_ibfk_1
+        foreign key (did) references diary (did)
+            on delete cascade
+);
+
+create index did
+    on diary_entry (did);
+
+
+
+SET GLOBAL event_scheduler = ON;
+CREATE EVENT clean_temp_data_event
+ON SCHEDULE EVERY 1 MINUTE
+DO
+BEGIN
+    DELETE FROM temp_user
+    WHERE TIMESTAMPDIFF(MINUTE, create_time, NOW()) >= 5;
+END;
 
