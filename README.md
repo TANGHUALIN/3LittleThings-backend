@@ -12,7 +12,7 @@ JDBC接続プール：alibaba Druid<br>
 IDE:IntelliJ IDEA<br>
 SSL証明書：Let’s Encrypt <br>
 
-重要:exclamation:  <br>
+重要 :exclamation:  
 ローカル開発とクラウド上のフロントエンドとバックエンドの通信方法が違います。 <br>
 ソースコードはクラウド上と同じです。 <br>
 ローカルでは、ViteからTomcatにリクエストを送ります。CORSの対策として、CorsFilter.javaを追加し、web.xmlでfilterを設定します。  <br>
