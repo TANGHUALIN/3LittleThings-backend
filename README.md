@@ -9,22 +9,22 @@ RDBMS:mysql<br>
 JDBC接続プール：alibaba Druid<br>
 クラウドサーバ：alibaba Cloud centOS7.9<br>
 ビルドツール：Maven<br>
-IDE:IntelliJ IDEA  /
-SSL証明書：Let’s Encrypt  /
+IDE:IntelliJ IDEA<br>
+SSL証明書：Let’s Encrypt <br>
 
-重要:exclamation:  /
-ローカル開発とクラウド上のフロントエンドとバックエンドの通信方法が違います。  /
-ソースコードはクラウド上と同じです。  /
-ローカルでは、ViteからTomcatにリクエストを送ります。CORSの対策として、CorsFilter.javaを追加し、web.xmlでfilterを設定します。  /
-クラウド上では、Nginxは静的なコンテンツを処理し、動的なコンテンツはTomcatに転送されます。  /
+重要:exclamation:  <br>
+ローカル開発とクラウド上のフロントエンドとバックエンドの通信方法が違います。 <br>
+ソースコードはクラウド上と同じです。 <br>
+ローカルでは、ViteからTomcatにリクエストを送ります。CORSの対策として、CorsFilter.javaを追加し、web.xmlでfilterを設定します。  <br>
+クラウド上では、Nginxは静的なコンテンツを処理し、動的なコンテンツはTomcatに転送されます。<br>
 
-Gmail APIの使い方:  /
-Googleのサービスアカウントがお金をかけなければならないらしいので、今回は手間のかかる方法を使います。  /
-目標: 3littlethingsdiary@gmail.comから自動的にユーザーに検証メールを送ります。  /
-まず、このメールアドレスの許可を得る必要があります。  /
-Google OAuth2.0に対して、2つのファイルが必要です。  /
-1つ目: https://console.cloud.google.com/apis/ を通してcredentials.jsonを取得します。このファイルはアプリケーションとGoogle APIの間で通信するために必要です。  /
-2つ目: コードを実行して、Google OAuth 2.0の画面で3littlethingsdiary@gmail.comにログインして許可を与えます。そうすると、storedTokenが自動的に生成されます。このTokenが有効期限内であれば、自動的にメールを送ることができます。  /
+Gmail APIの使い方: <br>
+Googleのサービスアカウントがお金をかけなければならないらしいので、今回は手間のかかる方法を使います。<br>
+目標: 3littlethingsdiary@gmail.comから自動的にユーザーに検証メールを送ります。<br>
+まず、このメールアドレスの許可を得る必要があります。 <br>
+Google OAuth2.0に対して、2つのファイルが必要です。 <br>
+1つ目: https://console.cloud.google.com/apis/ を通してcredentials.jsonを取得します。このファイルはアプリケーションとGoogle APIの間で通信するために必要です。 <br>
+2つ目: コードを実行して、Google OAuth 2.0の画面で3littlethingsdiary@gmail.comにログインして許可を与えます。そうすると、storedTokenが自動的に生成されます。このTokenが有効期限内であれば、自動的にメールを送ることができます。 <br>
 
-SSL証明書:  /
-Linuxのターミナルで取得してNginxに配置します。  /
+SSL証明書: <br>
+Linuxのターミナルで取得してNginxに配置します。<br>
