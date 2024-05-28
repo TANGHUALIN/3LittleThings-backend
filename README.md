@@ -5,7 +5,7 @@ www.3littlethings.top
 言語:Java EE(Servlet) jdk11<br>
 アプリサーバー：Tomcat9<br>
 Webサーバ:Nginx<br>
-RDBMS:MySql<br>
+RDBMS:MySQL<br>
 JDBC接続プール：alibaba Druid<br>
 クラウドサーバ：alibaba Cloud centOS7.9<br>
 ビルドツール：Maven<br>
